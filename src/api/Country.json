@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": 125800000,
+    "interestingFacts": "Japan has more than 6,800 islands and is known for its bullet trains and cherry blossoms."
+  },
+  {
+    "id": 2,
+    "countryName": "Canada",
+    "capital": "Ottawa",
+    "population": 38930000,
+    "interestingFacts": "Canada has the longest coastline in the world and is home to about 60% of the world’s lakes."
+  },
+  {
+    "id": 3,
+    "countryName": "Brazil",
+    "capital": "Brasília",
+    "population": 215300000,
+    "interestingFacts": "Brazil is the only country in South America that speaks Portuguese and houses the Amazon Rainforest."
+  },
+  {
+    "id": 4,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": 1428000000,
+    "interestingFacts": "India is the world's largest democracy and the birthplace of chess, yoga, and Ayurveda."
+  },
+  {
+    "id": 5,
+    "countryName": "France",
+    "capital": "Paris",
+    "population": 67390000,
+    "interestingFacts": "France is the most visited country in the world and home to the Eiffel Tower and the Louvre."
+  },
+  {
+    "id": 6,
+    "countryName": "Australia",
+    "capital": "Canberra",
+    "population": 26880000,
+    "interestingFacts": "Australia has more kangaroos than people and is the only continent covered by a single country."
+  },
+  {
+    "id": 7,
+    "countryName": "Egypt",
+    "capital": "Cairo",
+    "population": 111500000,
+    "interestingFacts": "Egypt is home to the ancient pyramids and the Sphinx and is one of the oldest civilizations in the world."
+  },
+  {
+    "id": 8,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": 83240000,
+    "interestingFacts": "Germany is known for its engineering, beer, and castles, and it has over 1,500 different types of sausages."
+  },
+  {
+    "id": 9,
+    "countryName": "South Africa",
+    "capital": "Pretoria (administrative), Cape Town (legislative), Bloemfontein (judicial)",
+    "population": 60900000,
+    "interestingFacts": "South Africa has three capital cities and is known for its biodiversity and cultural diversity."
+  },
+  {
+    "id": 10,
+    "countryName": "Norway",
+    "capital": "Oslo",
+    "population": 5470000,
+    "interestingFacts": "Norway is known for its stunning fjords and consistently ranks among the happiest countries in the world."
+  }
+]
