@@ -19,19 +19,19 @@ const routes = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "about",
+                path: "/about",
                 element: <About />
             },
             {
-                path: "countries",
+                path: "/countries",
                 element: <Countries/>
             },
             {
-                path: "country/:code",
+                path: "/country/:code",
                 element: <CountryDetails/>
             },
             {
-                path: "contact",
+                path: "/contact",
                 element: <Contact/>,
             },
             

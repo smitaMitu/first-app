@@ -3,6 +3,7 @@ import { getCountries } from '../../api/Countries'
 import CountryCard from '../../component/Country/CountryCard';
 import Button from '../../common/Button/Button';
 import Loader from '../../component/Loader/Loader';
+import Pagination from '../../component/Pagination/Pagination';
 const Countries = () => {
     const [countries, setCountries] = useState([]);
     const [search, setSearch] = useState("");
@@ -10,8 +11,9 @@ const Countries = () => {
 
     const [region, setRegion] = useState();
     const [sortOrder, setSortOrder] = useState();
-
-
+    const [currentPage, setCurrentPage] = useState(1);
+    const limit = 10;
+    
     //old method before useTransition in version 19
     //   async function getCountriesData(){
     //     try{
@@ -65,7 +67,7 @@ const Countries = () => {
     const handleSortAsce = () => setSortOrder("asce")
     const handleSortDesc = () => setSortOrder("desc")
     const filterCountries = countries?.filter(country => {
-        console.log(country)
+        //console.log(country)
         return searchCountry(country) && filterRegion(country);
     })?.sort((a, b) => {
         if (sortOrder === "asce") {
@@ -76,7 +78,9 @@ const Countries = () => {
             return 0
         }
     })
-
+const endNumber = limit * currentPage;
+    const startNumber =  endNumber - limit ;
+    
     return (
         <>
 
@@ -112,11 +116,17 @@ const Countries = () => {
                                 <div className='country-list'>
 
                                     {filterCountries &&
-                                        filterCountries?.map((country) => {
+                                        filterCountries?.slice(startNumber,endNumber).map((country) => {
                                             return <CountryCard country={country} key={country.code} />
                                         })
                                     }
                                 </div>
+                                <Pagination 
+                                setCurrentPage={setCurrentPage}
+                                 currentPage={currentPage} 
+                                 arrayList={filterCountries} 
+                                 limitPerPage={limit} 
+                                 />
                             </>
                     }
                 </>
