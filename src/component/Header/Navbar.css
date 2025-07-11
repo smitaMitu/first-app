@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #212121;
+}
+
+.nav-container {
+    padding-block: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: var(--ff-2);
+}
+
+.nav nav {
+    display: flex;
+    gap: 0.75rem;
+    & a{
+        font-weight: 300;
+        letter-spacing: 0.5px;
+    }
+}
+.nav nav a:hover, .nav nav a.active{
+    color:aqua;
+}

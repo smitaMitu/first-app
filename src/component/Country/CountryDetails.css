@@ -1,0 +1,15 @@
+.country-details-container{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    & .country-details-img{
+        max-width: 250px;
+        display: block;
+        text-align: center;
+    }
+     & .country-details-img img{
+        max-width: 100%;
+        min-width: 200px;
+    }
+}

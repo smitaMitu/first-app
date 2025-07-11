@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "MdPlace",
+    "title": "Find us",
+    "details": "Navi Mumbait, Maharashtra"
+  },
+  {
+    "icon": "IoCallSharp",
+    "title": "Call us",
+    "details": "9768929458"
+  },
+  {
+    "icon": "TbMailPlus",
+    "title": "Mail us",
+    "details": "dummy@gmail.com"
+  }
+]
